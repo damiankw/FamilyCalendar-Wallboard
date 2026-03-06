@@ -1,0 +1,12 @@
+[Unit]
+Description=Autonomous Screen Scheduler
+After=graphical.target
+
+[Service]
+User=pi
+Environment=WAYLAND_DISPLAY=wayland-0
+ExecStart=/usr/bin/python3 /usr/local/bin/screen_scheduler.py
+Restart=always
+
+[Install]
+WantedBy=graphical.target

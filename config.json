@@ -1,0 +1,12 @@
+{
+  "output_name": "HDMI-A-1",
+  "button_gpio": 17,
+  "override_minutes": 30,
+  "scheduler_interval": 15,
+  "schedule": [
+    ["06:00", "on"],
+    ["10:00", "off"],
+    ["17:00", "on"],
+    ["19:00", "off"]
+  ]
+}
